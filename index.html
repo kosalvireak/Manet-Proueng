@@ -16,47 +16,82 @@
             margin-top: 10%;
         }
         .w3-btn {
-            background-color: #04AA6D;
+            font-family: "Fredoka", sans-serif;
+            font-size: 25px;
+            background-color: darkorange;
             color: white;
-            border-radius: 5px;
+            border-radius: 10px;
+            border-color:none;
             padding: 8px 10px 10px 10px;        
         }
+        .w3-btn:hover{
+            background-color: #dddddd;
+        }
+        /* .text{
+            color: black;
+        } */
+        
         .btn {
             text-align: center;
             margin-top: 5%;
         }
+        
         ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
+            background-color: #dddddd;
             overflow: hidden;
-            }
-
-        li {
-            float:left;
-            }
+        }
+        li{
+            display: inline;
+            float: left;
+        }
+        a{
+            padding: 8px;
+            background-color: #dddddd;
+        }
         li a {
             display: block;
             color: black;
             text-align: center;
-            margin-left: 300px;
             padding: 14px 16px;
             text-decoration: none;
-            }
+        }
+        li :hover {
+            background-color: darkorange;
+        }
+        .active {
+            background-color: darkorange;
+        }
+        .active:hover{
+            background-color: #dddddd !important;
+        }
+        
     </style>
     
+    <script>
+        function black()
+        {
+        document.getElementById('text').style.color="black";
+        wait(1);
+        document.getElementById('text').style.color="white";
+        }
+    </script>
 </head>
 <body>
     <ul>
-        <li><a href="#news">News</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Experience</a></li>
+        <li style="float:right"><a class="active" href="#about">My CV</a></li>
       </ul>
     <div class="inbody">
         <h2 class="font-effect-fire">Coding doesn't have to be difficult.</h2><br>
-        <p class="font-effect-neon">Join our community to elevate your tech career to the next level</p>
+        <p class="font-effect-neon">I am a junior Web developer</p>
         <div class="btn">
-            <a href="https://github.com/kosalvireak" target="_blank" class="w3-btn">Get started »</a>
+            <a href="https://github.com/kosalvireak" target="_blank" class="w3-btn">Get started »</a><br>
+            <button onclick="black()" class="w3-btn btn"><a1 id="text">Get started >></a1></button>
         </div>
     </div>
 </body>
