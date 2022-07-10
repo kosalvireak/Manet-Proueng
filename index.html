@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredoka&effect=fire|neon">
     <style>
@@ -10,52 +11,60 @@
             background-image: url("image.jpg");
             background-repeat: no-repeat;
             background-size: 100%;
-            height:100%;
+            height: 100%;
         }
-        .inbody{
+
+        .inbody {
             margin-top: 10%;
         }
+
         .w3-btn {
             font-family: "Fredoka", sans-serif;
             font-size: 25px;
             background-color: darkorange;
             color: white;
             border-radius: 10px;
-            border-color:none;
-            padding: 8px 10px 10px 10px;    
-            text-decoration: none;    
+            border-color: none;
+            padding: 8px 10px 10px 10px;
+            text-decoration: none;
         }
-        .w3-btn:hover{
+
+        .w3-btn:hover {
             background-color: #dddddd;
             color: black;
         }
+
         /* .text{
             color: black;
         } */
-        
+
         .btn {
             text-align: center;
             margin-top: 5%;
         }
-        
+
         ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
-            
-            background-color: #dddddd; /* comment this line, the nav bar will disappeer */
+
+            /* background-color: #dddddd; */
+            /* comment this line, the nav bar will disappeer */
             overflow: hidden;
             border-radius: 10px;
         }
-        li{
+
+        li {
             display: inline;
             float: left;
             border-radius: 10px;
         }
-        a{
+
+        a {
             padding: 8px;
             background-color: #dddddd;
         }
+
         li a {
             display: block;
             color: black;
@@ -64,35 +73,67 @@
             text-decoration: none;
             border-radius: 10px;
         }
+
         li :hover {
             background-color: darkorange;
         }
+
         .active {
             background-color: darkorange;
         }
-        .active:hover{
+
+        .active:hover {
             background-color: #dddddd !important;
         }
-        
+
+        .image {
+            width: 192px;
+            height: 108px;
+        }
     </style>
-    
+
     <script>
-        function black()
-        {
-        document.getElementById('text').style.color="black";
-        window.location = "https://github.com/kosalvireak";
-        //setTimeout(document.getElementById('text').style.color="white", 1000);
-        // document.getElementById('text').style.color="white";
+        function black() {
+            document.getElementById('text').style.color = "black";
+            window.location = "https://github.com/kosalvireak";
+        }
+
+        
+        function swapImage() {
+            var Image_Id = document.getElementById('pic');
+            if (Image_Id.src.match("image.jpg")) {
+                Image_Id.src = "image2.jpg";
+                document.body.style.backgroundImage = "url('image.jpg')";
+            }
+            else {
+                Image_Id.src = "image.jpg";
+                document.body.style.backgroundImage = "url('image2.jpg')";
+            }
+        }
+        function swapImage2() {
+            var Image_Id = document.getElementById('pic2');
+            if (Image_Id.src.match("image.jpg")) {
+                Image_Id.src = "image3.jpg";
+                document.body.style.backgroundImage = "url('image.jpg')";
+            }
+            
+            else {
+                Image_Id.src = "image.jpg";
+                document.body.style.backgroundImage = "url('image3.jpg')";
+            }
         }
     </script>
 </head>
+
 <body>
     <ul>
         <li><a href="#">About Me</a></li>
         <li><a href="#">Education</a></li>
         <li><a href="#">Experience</a></li>
-        <li style="float:right"><a class="active" href="https://www.canva.com/design/DAE67tUPFd4/FBaBCc6-jIyyysEsSn_eIQ/edit" target="_blank">My CV</a></li>
-      </ul>
+        <li style="float:right"><a class="active"
+                href="https://www.canva.com/design/DAE67tUPFd4/FBaBCc6-jIyyysEsSn_eIQ/edit" target="_blank">My CV</a>
+        </li>
+    </ul>
     <div class="inbody">
         <h2 class="font-effect-fire">Coding doesn't have to be difficult.</h2><br>
         <p class="font-effect-neon">I am a junior Web developer</p>
@@ -100,6 +141,13 @@
             <a href="https://github.com/kosalvireak" target="_blank" class="w3-btn">Get started »</a><br>
             <!-- <button  onclick="black()"  class="w3-btn btn"><a1 href="https://github.com/kosalvireak" id="text">NO >></a1></button> -->
         </div>
+
     </div>
+    <br>
+    <br>
+    <img onclick="swapImage()" src ='image2.jpg' id="pic" width="192px" height="108px">
+    <img onclick="swapImage2()" src ='image3.jpg' id="pic2" width="192px" height="108px">
+
 </body>
+
 </html>
