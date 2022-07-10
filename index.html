@@ -98,30 +98,77 @@
             window.location = "https://github.com/kosalvireak";
         }
 
-        
-        function swapImage() {
-            var Image_Id = document.getElementById('pic');
-            if (Image_Id.src.match("image.jpg")) {
-                Image_Id.src = "image2.jpg";
-                document.body.style.backgroundImage = "url('image.jpg')";
-            }
-            else {
-                Image_Id.src = "image.jpg";
-                document.body.style.backgroundImage = "url('image2.jpg')";
-            }
-        }
         function swapImage2() {
-            var Image_Id = document.getElementById('pic2');
-            if (Image_Id.src.match("image.jpg")) {
-                Image_Id.src = "image3.jpg";
-                document.body.style.backgroundImage = "url('image.jpg')";
-            }
-            
-            else {
-                Image_Id.src = "image.jpg";
-                document.body.style.backgroundImage = "url('image3.jpg')";
-            }
+            var img = document.getElementById('pic2').src;
+            const div = document.querySelector('body')
+            const style = window.getComputedStyle(div, false)
+            const bac_grou = style.backgroundImage.slice(4, -1).replace(/"/g, "");
+
+            document.body.style.backgroundImage = "url(" + img + ")";
+            document.getElementById('pic2').src = bac_grou;
+
         }
+        function swapImage3() {
+            var img = document.getElementById('pic3').src;
+            const div = document.querySelector('body')
+            const style = window.getComputedStyle(div, false)
+            const bac_grou = style.backgroundImage.slice(4, -1).replace(/"/g, "");
+
+            document.body.style.backgroundImage = "url(" + img + ")";
+            document.getElementById('pic3').src = bac_grou;
+
+        }
+        function swapImage4() {
+            var img = document.getElementById('pic4').src;
+            const div = document.querySelector('body')
+            const style = window.getComputedStyle(div, false)
+            const bac_grou = style.backgroundImage.slice(4, -1).replace(/"/g, "");
+
+            document.body.style.backgroundImage = "url(" + img + ")";
+            document.getElementById('pic4').src = bac_grou;
+
+        }
+        function swapImage5() {
+            var img = document.getElementById('pic5').src;
+            const div = document.querySelector('body')
+            const style = window.getComputedStyle(div, false)
+            const bac_grou = style.backgroundImage.slice(4, -1).replace(/"/g, "");
+
+            document.body.style.backgroundImage = "url(" + img + ")";
+            document.getElementById('pic5').src = bac_grou;
+
+        }
+        function swapImage6() {
+            var img = document.getElementById('pic6').src;
+            const div = document.querySelector('body')
+            const style = window.getComputedStyle(div, false)
+            const bac_grou = style.backgroundImage.slice(4, -1).replace(/"/g, "");
+
+            document.body.style.backgroundImage = "url(" + img + ")";
+            document.getElementById('pic6').src = bac_grou;
+
+        }
+        function swapImage7() {
+            var img = document.getElementById('pic7').src;
+            const div = document.querySelector('body')
+            const style = window.getComputedStyle(div, false)
+            const bac_grou = style.backgroundImage.slice(4, -1).replace(/"/g, "");
+
+            document.body.style.backgroundImage = "url(" + img + ")";
+            document.getElementById('pic7').src = bac_grou;
+
+        }
+        function swapImage8() {
+            var img = document.getElementById('pic8').src;
+            const div = document.querySelector('body')
+            const style = window.getComputedStyle(div, false)
+            const bac_grou = style.backgroundImage.slice(4, -1).replace(/"/g, "");
+
+            document.body.style.backgroundImage = "url(" + img + ")";
+            document.getElementById('pic8').src = bac_grou;
+
+        }
+
     </script>
 </head>
 
@@ -145,8 +192,13 @@
     </div>
     <br>
     <br>
-    <img onclick="swapImage()" src ='image2.jpg' id="pic" width="192px" height="108px">
-    <img onclick="swapImage2()" src ='image3.jpg' id="pic2" width="192px" height="108px">
+    <img onclick="swapImage2()" src='image2.jpg' id="pic2" width="192px" height="108px">
+    <img onclick="swapImage3()" src='image3.jpg' id="pic3" width="192px" height="108px">
+    <img onclick="swapImage4()" src='image4.jpg' id="pic4" width="192px" height="108px">
+    <img onclick="swapImage5()" src='image5.jpg' id="pic5" width="192px" height="108px">
+    <img onclick="swapImage6()" src='image6.jpg' id="pic6" width="192px" height="108px">
+    <img onclick="swapImage7()" src='image7.jpg' id="pic7" width="192px" height="108px">
+    <img onclick="swapImage8()" src='image8.jpg' id="pic8" width="192px" height="108px">
 
 </body>
 
