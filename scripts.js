@@ -9,11 +9,13 @@ function swapImage2() {
     const div = document.querySelector('body')
     const style = window.getComputedStyle(div, false)
     const bac_grou = style.backgroundImage.slice(4, -1).replace(/"/g, "");
+    globalThis.bac_img = "image2.jpg";
 
     document.body.style.backgroundImage = "url(" + img + ")";
     document.getElementById('pic2').src = bac_grou;
 
 }
+newimg = bac_img;
 function swapImage3() {
     var img = document.getElementById('pic3').src;
     const div = document.querySelector('body')
@@ -70,7 +72,11 @@ function swapImage8() {
     const style = window.getComputedStyle(div, false)
     const bac_grou = style.backgroundImage.slice(4, -1).replace(/"/g, "");
 
-    document.body.style.backgroundImage = "url(" + img + ")";
+        
     document.getElementById('pic8').src = bac_grou;
+
+}
+function About_Me(){
+    document.body.style.backgroundImage = "url(" + newimg + ")";
 
 }
