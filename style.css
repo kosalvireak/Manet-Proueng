@@ -69,13 +69,31 @@ li a {
     border-radius: 10px;
 }
 
+.school {
+    display: contents;
+    color: black;
+    text-decoration: none;
+}
+
 li :hover {
     background-color: darkorange;
     color: white;
 }
-#pic2, #pic3, #pic4, #pic5, #pic6, #pic7, #pic8{
+
+#pic2,
+#pic3,
+#pic4,
+#pic5,
+#pic6,
+#pic7,
+#pic8 {
     border-radius: 15px;
-    padding: 0px; 
+    padding: 0px;
     width: 192px;
-    height: 120px;  
-  }
+    height: 120px;
+}
+
+h3 :hover {
+    background-color: darkorange;
+    color: white;
+}
