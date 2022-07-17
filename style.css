@@ -55,10 +55,7 @@ li {
     border-radius: 10px;
 }
 
-a {
-    padding: 8px;
-    background-color: transparent;
-}
+
 
 li a {
     display: block;
@@ -68,7 +65,16 @@ li a {
     text-decoration: none;
     border-radius: 10px;
 }
-
+.vireak{
+    border-radius: 10px;
+    display: block;
+    padding: 14px 16px;
+    color: black;
+}
+.vireak :hover {
+    background-color: darkorange;
+    color: white;
+}
 .school {
     display: contents;
     color: black;
@@ -79,6 +85,7 @@ li :hover {
     background-color: darkorange;
     color: white;
 }
+
 
 #pic2,
 #pic3,
@@ -97,3 +104,14 @@ h3 :hover {
     background-color: darkorange;
     color: white;
 }
+
+.image {
+    float: right;
+    margin: 10% 5%;
+    width: 20%;
+    height: 20%;
+    border-radius: 15%;
+    overflow: hidden;
+    background-color: blue;
+  }
+  
