@@ -6,10 +6,26 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 100vh;
+    height: 5px;
 }
 
+.back{
+        margin-top: 0px;
+        margin-right: 25px;
+        margin-bottom: 150px;
+        margin-left: 25px;
+        padding: 5px 5px 30px 5px;
+        border-radius: 15px;
+        background-color: rgb(220,88,42,0.3);
 
+}
+.back2{
+    margin: 25px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 15px;
+    background-color: rgb(220,88,42,0.3);
+
+}
 
 .w3-btn {
     font-family: "Fredoka", sans-serif;
