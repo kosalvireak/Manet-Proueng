@@ -64,16 +64,17 @@ ul {
 }
 
 li {
-    display: inline;
     float: left;
-    border-radius: 10px;
+    border-radius: 10%;
+    
 }
 
 
 
 li a {
-    display: block;
     color: black;
+    /* display: inline-block; */
+    display: inline-flex;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
