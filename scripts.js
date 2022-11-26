@@ -82,7 +82,7 @@ function swapImage8() {
     document.getElementById('pic8').src = bac_grou;
 
 }
-function About_Me(){
+function About_Me() {
     document.body.style.backgroundImage = "url(" + bac_img + ")";
 
 }

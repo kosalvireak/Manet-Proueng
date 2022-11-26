@@ -10,21 +10,26 @@ body {
     height: 5px;
 }
 
-.back{
-        margin-top: 0px;
-        margin-right: 25px;
-        margin-bottom: 150px;
-        margin-left: 25px;
-        padding: 5px 5px 30px 5px;
-        border-radius: 15px;
-        background-color: rgb(220,88,42,0.3);
+.website-counter {
+    font-size: x-small;
+}
+
+.back {
+    margin-top: 0px;
+    margin-right: 25px;
+    margin-bottom: 150px;
+    margin-left: 25px;
+    padding: 5px 5px 30px 5px;
+    border-radius: 15px;
+    background-color: rgb(220, 88, 42, 0.3);
 
 }
-.back2{
+
+.back2 {
     margin: 25px;
     padding: 5px 5px 5px 5px;
     border-radius: 15px;
-    background-color: rgb(220,88,42,0.3);
+    background-color: rgb(220, 88, 42, 0.3);
 
 }
 
@@ -67,7 +72,7 @@ ul {
 li {
     float: left;
     border-radius: 10%;
-    
+
 }
 
 
@@ -81,15 +86,18 @@ li a {
     text-decoration: none;
     border-radius: 10px;
 }
-.vireak{
+
+.vireak {
     border-radius: 10px;
     display: block;
     color: black;
 }
+
 .vireak :hover {
     background-color: darkorange;
     color: white;
 }
+
 .school {
     display: contents;
     color: black;
@@ -129,14 +137,14 @@ h3 :hover {
     overflow: hidden;
     background-color: blue;
     max-width: 100%;
-  }
-  .column {
+}
+
+.column {
     width: 100%;
-  }
-  
-  @media (min-width: 600px) {
+}
+
+@media (min-width: 600px) {
     .column {
-      width: 50%;
+        width: 50%;
     }
-  }
-  
+}
