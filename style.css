@@ -2,7 +2,8 @@ body {
     font-family: "Fredoka", sans-serif;
     font-size: 25px;
     text-align: center;
-    background-image: url("image.jpg");
+    /* background-image: url("image.jpg"); */
+    background-color: #dddddd;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
