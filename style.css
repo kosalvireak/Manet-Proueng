@@ -123,10 +123,10 @@ li :hover {
     height: 120px;
 }
 
-h3 :hover {
+/* h3 :hover {
     background-color: darkorange;
     color: white;
-}
+} */
 
 .image {
     float: right;
