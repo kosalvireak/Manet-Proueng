@@ -18,3 +18,10 @@ counterContainer.innerHTML = visitCount;
 //   localStorage.setItem("page_view", 1);
 //   counterContainer.innerHTML = visitCount;
 // });
+
+const nav_bar = document.querySelector("body").addEventListener("scroll",Change_back());
+
+function Change_back()
+{
+  // document.querySelector('.nav_bar').style.backgroundColor = 'darkorange';
+}
