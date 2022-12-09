@@ -75,7 +75,10 @@ li {
 
 }
 
-
+.nav_bar{
+    background-color: none;
+    /* display: none; */
+}
 
 li a {
     color: black;
@@ -128,23 +131,32 @@ li :hover {
     color: white;
 } */
 
-.image {
-    float: right;
-    margin: 10% 5%;
-    width: 20%;
-    height: 20%;
-    border-radius: 15%;
-    overflow: hidden;
-    background-color: blue;
-    max-width: 100%;
+.imageofme {
+    width: 100%;
 }
 
 .column {
     width: 100%;
 }
 
-@media (min-width: 600px) {
-    .column {
+@media screen and (max-width: 750px) {
+    #me {
+      float: none;
+      width: 100%;
+      font-size: smaller;
+    }
+    img{
+        width: 50%;
+        margin-left: none;
+        margin-right: auto;
+        padding: none;
+    }
+    .imageofme{
         width: 50%;
     }
-}
+    .w3-btn{
+        width: 50%;
+        padding:4px 5px 5px 5px;
+        font-size: 15px;
+    }
+  }

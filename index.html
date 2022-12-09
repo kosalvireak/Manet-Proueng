@@ -14,17 +14,19 @@
 </head>
 
 <body id="me">
-    <ul style="position:fixed; margin: 0;padding: 0; list-style-type: none; overflow:auto;">
-        <li><a href="#me">Home</a></li>
-        <li><a href="#About_Me" onclick="About_Me()">About Me</a></li>
-        <li><a href="#Education">Education</a></li>
-        <li><a href="#Experience">Experience</a></li>
-        <li><a href="#Internship">Internship</a></li>
-        <li><a class="active" style="float:right" href="https://i.postimg.cc/0jM1v8jt/Kosalvireak-Khoeun-s-Resume.png"
-                target="_blank">My CV</a>
-        </li>
+    <div class="nav_bar" style="position:fixed; margin: 0;padding: 0; list-style-type: none; overflow:auto;">
+        <ul >
+            <li><a href="#me">Home</a></li>
+            <li><a href="#About_Me" onclick="About_Me()">About Me</a></li>
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#Experience">Experience</a></li>
+            <li><a href="#Internship">Internship</a></li>
+            <li><a class="active" style="float:right" href="https://i.postimg.cc/0jM1v8jt/Kosalvireak-Khoeun-s-Resume.png"
+                    target="_blank">My CV</a>
+            </li>
 
-    </ul>
+        </ul>
+    </div>
 
 
     <div class="inbody">
@@ -53,15 +55,18 @@
         <img onclick="swapImage8()" src='image8.jpg' class="img-responsive" id="pic8" width="192px" height="108px">
     </div> -->
 
-    <div id="About_Me">
+    <div id="About_Me"  style="display: inline;">
         <ul>
+            <div>
             <picture>
 
                 <source type="image/jpg" srcset="myphoto.jpg 1x, myphoto.jpg 2x">
-                <img alt="myphoto.jpg" src=" myphoto.jpg " loading="lazy" class="image" style="width: 100%;
-                max-width: 310px;
+                <img alt="myphoto.jpg" src=" myphoto.jpg " loading="lazy" class="imageofme" style="
+                max-width: 310px; float: right; margin: 10% 5%;
+    border-radius: 15%;
                 height: auto;">
             </picture>
+        </div>
             <div style="margin: 18% 5%;">
 
                 <p>
@@ -90,7 +95,7 @@
             <br>
             <img src="primary_school.png" style="float: left; margin-left: 5%; border-radius: 15px; width: 100%;
             max-width: 620px;
-            height: auto;" class="img-responsive">
+            height: auto;" >
             <div style="padding: 7% 1% 5% 5% ;">
                 <a class="school ">
                     <h3><strong>Primary school</strong></h3>
