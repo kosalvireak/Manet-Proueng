@@ -1,64 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
 </head>
+
 <body>
     <style>
-.container{
-    width: 300px;
-    height: 250px;
-    border: 1px solid lightgray;
-    border-radius: 7px;
+        .container {
+            width: 300px;
+            height: 250px;
+            border: 1px solid lightgray;
+            border-radius: 7px;
 
-}
-.image{
-height: 150px;
-border-bottom: 1px solid lightgray;
-/* background-image: url(https://www.seekpng.com/png/detail/397-3978064_thung-for-scratch-100-by-100-pixels.png); */
-background-size: 100px;
-background-repeat: no-repeat;
-background-position: center;
-margin: auto;
+        }
 
-}
-/* .image:hover{
+        .image {
+            height: 150px;
+            border-bottom: 1px solid lightgray;
+            background-image: url(https://www.seekpng.com/png/detail/397-3978064_thung-for-scratch-100-by-100-pixels.png);
+            background-size: 100px;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: auto;
+
+        }
+
+        /* .image:hover{
     opacity: 0.6;
     background-color: red; }*/
 
-.text{
-    margin: 10px;
+        .text {
+            margin: 10px;
 
-}
-.hide {
-  display: block;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid black;
-  margin: 1%;
-}
+        }
+        
+        .line {
+            width: max-content;
 
-    
-.image:hover + .hide {
-  display: block;
-  color: red;
-}
+            column-count: 2;
+            column-gap: 40px;
+        }
     </style>
     <div class="container">
-        <div class="image" >
-            <p class="hide">Preview</p>
-            
+        <div class="image">
+            <!-- <p class="hide">Preview</p> -->
+
         </div>
-        <!-- <div class="hide">preview</div> -->
 
         <div class="text">
-            <h3>Hello</h3>
+            <div class="line">
+                <a class="fa fa-ellipsis-v" style="font-size: 15px;">
+                     <span style="float: left;">Hello</span></a>
+
+
+
+            </div>
+
+
+
 
         </div>
     </div>
 </body>
+
 </html>
