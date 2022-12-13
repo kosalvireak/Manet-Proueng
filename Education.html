@@ -9,44 +9,52 @@
 <body>
     <style>
 .container{
-    width: 300px;
-    height: 250px;
-    border: 1px solid lightgray;
-    border-radius: 7px;
-
+	width: 300px;
+	height: 250px;
+	border: 1px solid lightgray;
+	border-radius: 7px;
+}
+.container:hover{
+	box-shadow: 10px 10px 20px 0px rgba(96, 215, 213, 0.56);
+	/* transform: translate(500px, 1px);
+	*/
 }
 .image{
-height: 150px;
-border-bottom: 1px solid lightgray;
-/* background-image: url(https://www.seekpng.com/png/detail/397-3978064_thung-for-scratch-100-by-100-pixels.png); */
-background-size: 100px;
-background-repeat: no-repeat;
-background-position: center;
-margin: auto;
-
+	height: 150px;
+	border-bottom: 1px solid lightgray;
+	background-image: url(https://www.seekpng.com/png/detail/397-3978064_thung-for-scratch-100-by-100-pixels.png);
+	background-size: 100px;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: auto;
+	display: flex;
+	border-radius: 7px;
+	opacity: 1;
+	transition: opacity 0.6s ease 0s;
 }
-/* .image:hover{
-    opacity: 0.6;
-    background-color: red; }*/
-
+.image:hover{
+	opacity: 0.5;
+	/* background-color: gray;
+	*/
+	filter: contrast(50%);
+}
 .text{
-    margin: 10px;
-
+	margin: 10px;
 }
 .hide {
-  display: block;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid black;
-  margin: 1%;
+	display: none;
+	/* display: flex;
+	*/
+	align-items: center;
+	justify-content: center;
+	border: 1px solid black;
+	padding: 5% 0% 5% 0%;
+	margin: auto;
+	height: 3vh;
+	width: 9vw;
 }
 
-    
-.image:hover + .hide {
-  display: block;
-  color: red;
-}
+
     </style>
     <div class="container">
         <div class="image" >
@@ -55,10 +63,11 @@ margin: auto;
         </div>
         <!-- <div class="hide">preview</div> -->
 
-        <div class="text">
+        <div class="text" style="background-image: linear-gradient(90deg, rgba(111, 181, 251, 1) 0%, rgba(187, 93, 93, 1) 100%); width: 250px; height: 75px;">
             <h3>Hello</h3>
 
         </div>
+        
     </div>
 </body>
 </html>
