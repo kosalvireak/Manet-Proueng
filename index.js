@@ -25,3 +25,16 @@ function Change_back()
 {
   // document.querySelector('.nav_bar').style.backgroundColor = 'darkorange';
 }
+var prevScrollpos = window.pageYOffset;
+var nav = document.getElementById("navbar").style;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    nav.top = "0";
+    nav.backgroundColor = " dddddd";
+  } else {
+    nav.top = "-50px";
+    nav.backgroundColor = " dddddd";
+  }
+  prevScrollpos = currentScrollPos;
+}
