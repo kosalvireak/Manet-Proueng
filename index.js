@@ -19,16 +19,15 @@ counterContainer.innerHTML = visitCount;
 //   counterContainer.innerHTML = visitCount;
 // });
 
-const nav_bar = document.querySelector("body").addEventListener("scroll",Change_back());
+const nav_bar = document.querySelector("body").addEventListener("scroll", Change_back());
 
-function Change_back()
-{
+function Change_back() {
   // document.querySelector('.nav_bar').style.backgroundColor = 'darkorange';
 }
 var prevScrollpos = window.pageYOffset;
 var nav = document.getElementById("navbar").style;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
+window.onscroll = function () {
+  var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     nav.top = "0";
     nav.backgroundColor = " dddddd";
