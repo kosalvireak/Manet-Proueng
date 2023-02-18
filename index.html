@@ -6,13 +6,14 @@
     <script src="scripts.js"></script>
 
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link href="style.css" rel="stylesheet">
+    <!-- <link href="style.css" rel="stylesheet"> -->
+    <link href="style1.css" rel="stylesheet">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body id="me">
-    <div id="navbar">
+<body>
+    <nav id="navbar" style="display:none">
         <ul>
             <li><a href="#me">Home</a></li>
             <li><a href="#About_Me" onclick="About_Me()">About Me</a></li>
@@ -24,20 +25,17 @@
             </li>
 
         </ul>
-    </div>
+    </nav>
 
-
-    <div class="inbody">
-        <br><br><br><br><br><br><br><br>
-        <h2 class="font-effect-fire">I love pushing the boundaries of my knowledge</h2><br>
-        <p class="font-effect-neon">I am a junior Web developer</p>
-        <div class="btn">
-            <a href="https://github.com/kosalvireak" target="_blank" class="w3-btn">My GitHub »</a>
+    <section id="me">
+        <div class="me">
+            <h2 class="font-effect-fire">I love pushing the boundaries of my knowledge</h2>
+            <p class="font-effect-neon">I am a junior Web developer</p>
+            <div class="btn">
+                <a href="https://github.com/kosalvireak" target="_blank" class="w3-btn">My GitHub »</a>
+            </div>
         </div>
-
-    </div>
-    <br>
-    <br>
+    </section>
 
     <!-- <div class="back">
         <p class="vireak"> Choose any background image you love.</p>
@@ -49,146 +47,152 @@
         <img onclick="swapImage7()" src='image7.jpg' class="img-responsive" id="pic7" width="192px" height="108px">
         <img onclick="swapImage8()" src='image8.jpg' class="img-responsive" id="pic8" width="192px" height="108px">
     </div> -->
-
-    <div id="About_Me" style="display: inline;">
-        <ul>
-            <div>
-                <picture>
-                    <img alt="myphoto.jpg" src=" /img/myphoto.jpg " loading="lazy" class="imageofme" style="
+    <section>
+        <div id="About_Me" style="display: inline;">
+            <ul>
+                <div>
+                    <picture>
+                        <img alt="myphoto.jpg" src=" /img/myphoto.jpg " loading="lazy" class="imageofme" style="
                 max-width: 310px; float: right; margin: 10% 5%;
     border-radius: 15%;
                 height: auto;">
-                </picture>
-            </div>
-            <div style="margin: 18% 5%;">
+                    </picture>
+                </div>
+                <div style="margin: 18% 5%;">
 
-                <p>
-                    My name is Khoeun Kosalvireak, I am currently an undergraduate student
-                    taking a Higher Diploma in Software Development at E2STEM Education Cambodia
-                    and Information Technology Engineering at the Royal University of Phnom Penh.
-                </p>
+                    <p>
+                        My name is Khoeun Kosalvireak, I am currently an undergraduate student
+                        taking a Higher Diploma in Software Development at E2STEM Education Cambodia
+                        and Information Technology Engineering at the Royal University of Phnom Penh.
+                    </p>
 
-            </div>
+                </div>
 
 
-        </ul>
+            </ul>
 
-    </div>
-    <div id="Education">
-        <br>
-        <ul>
+        </div>
+    </section>
+    <section>
+        <div id="Education">
             <br>
-            <img src="/img/primary_school.png" style="float: left; margin-left: 5%; border-radius: 15px; width: 100%;
+            <ul>
+                <br>
+                <img src="/img/primary_school.png" style="float: left; margin-left: 5%; border-radius: 15px; width: 100%;
             max-width: 620px;
             height: auto;">
-            <div style="padding: 7% 1% 5% 5% ;">
-                <a class="school ">
-                    <h3><strong>Primary school</strong></h3>
-                </a>
-                <p class="font-effect-fire">
-                    2009 - 2015
-                </p>
-            </div>
+                <div style="padding: 7% 1% 5% 5% ;">
+                    <a class="school ">
+                        <h3><strong>Primary school</strong></h3>
+                    </a>
+                    <p class="font-effect-fire">
+                        2009 - 2015
+                    </p>
+                </div>
 
-        </ul>
-        <br>
-        <ul>
+            </ul>
+            <br>
+            <ul>
 
-            <img src="/img/Secondary_school.jpg" style="float: right; margin-right: 5%; border-radius: 15px; width: 100%;
+                <img src="/img/Secondary_school.jpg" style="float: right; margin-right: 5%; border-radius: 15px; width: 100%;
             max-width: 620px;
             height: auto;" class="img-responsive">
-            <div style="padding: 7% 5% 5% 1% ;">
-                <a href="https://web.facebook.com/jayavarman7school" target="_blank" class="school">
-                    <h3><strong>Secondary school</strong></h3>
-                </a>
-                <p class="font-effect-fire">
-                    2015 - 2018
-                </p>
-            </div>
-        </ul>
-        <br>
-        <ul>
+                <div style="padding: 7% 5% 5% 1% ;">
+                    <a href="https://web.facebook.com/jayavarman7school" target="_blank" class="school">
+                        <h3><strong>Secondary school</strong></h3>
+                    </a>
+                    <p class="font-effect-fire">
+                        2015 - 2018
+                    </p>
+                </div>
+            </ul>
+            <br>
+            <ul>
 
-            <img src="/img/High_school.png" style="float: left; margin-left: 5%; border-radius: 15px; width: 100%;
+                <img src="/img/High_school.png" style="float: left; margin-left: 5%; border-radius: 15px; width: 100%;
             max-width: 620px;
             height: auto;" class="img-responsive">
-            <div style="padding: 7% 1% 5% 5% ;">
-                <a href="https://e2stem.org.kh/" target="_blank" class="school">
-                    <h3><strong>High school</strong></h3>
-                </a>
-                <p class="font-effect-fire">
-                    2018 - 2021
-                </p>
-            </div>
-        </ul>
-        <br>
-        <ul>
+                <div style="padding: 7% 1% 5% 5% ;">
+                    <a href="https://e2stem.org.kh/" target="_blank" class="school">
+                        <h3><strong>High school</strong></h3>
+                    </a>
+                    <p class="font-effect-fire">
+                        2018 - 2021
+                    </p>
+                </div>
+            </ul>
+            <br>
+            <ul>
 
-            <img src="/img/Higher_diploma.png" style="float: right; margin-right: 5%; border-radius: 15px;width: 100%;
+                <img src="/img/Higher_diploma.png" style="float: right; margin-right: 5%; border-radius: 15px;width: 100%;
             max-width: 620px;
             height: auto;" class="img-responsive">
-            <div style="padding: 7% 5% 5% 1% ;">
-                <a class="school">
-                    <h3><strong>Higher Diploma </strong>(Software Development)</h3>
-                </a>
-                <p class="font-effect-fire">
-                    2021 - 2023
-                </p>
-            </div>
-        </ul>
-        <br>
-        <ul>
+                <div style="padding: 7% 5% 5% 1% ;">
+                    <a class="school">
+                        <h3><strong>Higher Diploma </strong>(Software Development)</h3>
+                    </a>
+                    <p class="font-effect-fire">
+                        2021 - 2023
+                    </p>
+                </div>
+            </ul>
+            <br>
+            <ul>
 
-            <img src="/img/University.jpg" style="float: left; margin-left: 5%; border-radius: 15px;width: 100%;
+                <img src="/img/University.jpg" style="float: left; margin-left: 5%; border-radius: 15px;width: 100%;
             max-width: 620px;
             height: auto;" class="img-responsive">
-            <div style="padding: 7% 1% 5% 5% ;">
-                <a href="http://www.rupp.edu.kh/" target="_blank" class="school">
-                    <h3><strong>University </strong>(Information Technology Engineering)</h3>
-                </a>
-                <p class="font-effect-fire">
-                    2021 - 2025
-                </p>
-            </div>
-        </ul>
-        <br>
+                <div style="padding: 7% 1% 5% 5% ;">
+                    <a href="http://www.rupp.edu.kh/" target="_blank" class="school">
+                        <h3><strong>University </strong>(Information Technology Engineering)</h3>
+                    </a>
+                    <p class="font-effect-fire">
+                        2021 - 2025
+                    </p>
+                </div>
+            </ul>
+            <br>
 
-    </div>
-    <div id="Experience" style="border-radius:5%; opacity:1; padding: 16% 16% 0% 16%;">
-        <div style="opacity: 10;" class="back2 vireak">
-            <div style="text-align: center; opacity: 1;">
-                <a>
-                    <h4><strong>Computer Lab Internship at E2STEM (1 month)</strong></h4>
-                </a>
-
-            </div>
-            <div style="text-align: center; opacity: 1;">
-                <p>Organize the lab, Electronic items.</p>
-                <p>Testing Device( Chromebook, Laptop, Camera).</p>
-                <p>Student Management System.</p>
-            </div>
         </div>
+    </section>
+    <section>
+        <div id="Experience" style="border-radius:5%; opacity:1; padding: 16% 16% 0% 16%;">
+            <div style="opacity: 10;" class="back2 vireak">
+                <div style="text-align: center; opacity: 1;">
+                    <a>
+                        <h4><strong>Computer Lab Internship at E2STEM (1 month)</strong></h4>
+                    </a>
 
-    </div>
-    <br>
-    <div id="Internship" style="border-radius:5%; opacity:1; padding: 16% 16% 0% 16%;">
-        <div style="opacity: 10;" class="back2 vireak">
-            <div style="text-align: center; opacity: 1;">
-                <a>
-                    <h4><strong>Development and Quality Assurance internship at Khalibre (3 months)</strong></h4>
-                </a>
-
-            </div>
-            <div style="text-align: center; opacity: 1;">
-                <p>Working with Liferay Front and Back-end.</p>
-                <p>Manual testing.</p>
-                <p>Write test case.</p>
+                </div>
+                <div style="text-align: center; opacity: 1;">
+                    <p>Organize the lab, Electronic items.</p>
+                    <p>Testing Device( Chromebook, Laptop, Camera).</p>
+                    <p>Student Management System.</p>
+                </div>
             </div>
 
         </div>
+        <br>
+    </section>
+    <section>
+        <div id="Internship" style="border-radius:5%; opacity:1; padding: 16% 16% 0% 16%;">
+            <div style="opacity: 10;" class="back2 vireak">
+                <div style="text-align: center; opacity: 1;">
+                    <a>
+                        <h4><strong>Development and Quality Assurance internship at Khalibre (3 months)</strong></h4>
+                    </a>
 
-    </div>
-    <br><br><br><br><br><br>
+                </div>
+                <div style="text-align: center; opacity: 1;">
+                    <p>Working with Liferay Front and Back-end.</p>
+                    <p>Manual testing.</p>
+                    <p>Write test case.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
     <a href="mailto:virakvary@gmail.com" target="blank">
         <img src="https://img.shields.io/badge/Gmail-blue?style=for-the-badge&logo=gmail&logoColor=white"
             alt="Gmail Badge" />

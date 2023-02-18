@@ -30,10 +30,10 @@ window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     nav.top = "0";
-    nav.backgroundColor = " dddddd";
+    nav.backgroundColor = " #dddddd";
   } else {
-    nav.top = "-50px";
-    nav.backgroundColor = " dddddd";
+    nav.top = "-80px";
+    nav.backgroundColor = " #dddddd";
   }
   prevScrollpos = currentScrollPos;
 }

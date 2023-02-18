@@ -1,18 +1,167 @@
 body {
     font-family: "Fredoka", sans-serif;
-    font-size: 25px;
-    text-align: center;
-   /* background-image: url("image.jpg");
-    */
-    background-color: #dddddd;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 5px;
 }
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
 .website-counter {
     font-size: x-small;
 }
+
+section {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    align-items: center;
+}
+
+.me {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0 0 -50px;
+}
+
+
+
+
+
+
+
+
+
+
 .back {
     margin-top: 0px;
     margin-right: 25px;
@@ -22,12 +171,14 @@ body {
     border-radius: 15px;
     background-color: rgb(220, 88, 42, 0.3);
 }
+
 .back2 {
     margin: 25px;
     padding: 5px 5px 5px 5px;
     border-radius: 15px;
     background-color: rgb(220, 88, 42, 0.3);
 }
+
 .w3-btn {
     font-family: "Fredoka", sans-serif;
     font-size: 25px;
@@ -38,10 +189,12 @@ body {
     padding: 8px 10px 10px 10px;
     text-decoration: none;
 }
+
 .w3-btn:hover {
     background-color: #dddddd;
     color: black;
 }
+
 /* .text{
     color: black;
 }
@@ -50,37 +203,42 @@ body {
     text-align: center;
     margin-top: 5%;
 }
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-   /* background-color: #dddddd;
+    align-items: center;
+    /* background-color: #dddddd;
     */
-   /* comment this line, the nav bar will disappeer */
+    /* comment this line, the nav bar will disappeer */
     overflow: hidden;
     border-radius: 10px;
 }
+
 li {
     float: left;
     border-radius: 10%;
 }
-#navbar{
-    background-color: #dddddd   ;
-    top:0px;
+
+#navbar {
+    background-color: #dddddd;
+    top: 0px;
     margin: 0;
-   padding: 0;
+    padding: 0;
     list-style-type: none;
-    overflow:auto;
+    overflow: auto;
     position: fixed;
     width: 100%;
     display: block;
     transition: top 0.3s;
-   /* display: none;
+    /* display: none;
     */
 }
+
 li a {
     color: black;
-   /* display: inline-block;
+    /* display: inline-block;
     */
     display: inline-flex;
     text-align: center;
@@ -88,30 +246,42 @@ li a {
     text-decoration: none;
     border-radius: 10px;
 }
+
 .vireak {
     border-radius: 10px;
     display: block;
     color: black;
 }
+
 .vireak :hover {
     background-color: darkorange;
     color: white;
 }
+
 .school {
     display: contents;
     color: black;
     text-decoration: none;
 }
+
 li :hover {
     background-color: darkorange;
     color: white;
 }
-#pic2, #pic3, #pic4, #pic5, #pic6, #pic7, #pic8 {
+
+#pic2,
+#pic3,
+#pic4,
+#pic5,
+#pic6,
+#pic7,
+#pic8 {
     border-radius: 15px;
     padding: 0px;
     width: 192px;
     height: 120px;
 }
+
 /* h3 :hover {
     background-color: darkorange;
     color: white;
@@ -120,27 +290,32 @@ li :hover {
 .imageofme {
     width: 100%;
 }
+
 .column {
     width: 100%;
 }
+
 @media screen and (max-width: 750px) {
     #me {
         float: none;
         width: 100%;
         font-size: smaller;
-   }
-    img{
+    }
+
+    img {
         width: 50%;
         margin-left: none;
         margin-right: auto;
         padding: none;
-   }
-    .imageofme{
+    }
+
+    .imageofme {
         width: 50%;
-   }
-    .w3-btn{
+    }
+
+    .w3-btn {
         width: 50%;
-        padding:4px 5px 5px 5px;
+        padding: 4px 5px 5px 5px;
         font-size: 15px;
-   }
+    }
 }
