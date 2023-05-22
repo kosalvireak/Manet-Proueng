@@ -1,20 +1,12 @@
-/* Box sizing */
-html {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,400,700");
 
 *,
 *:before,
 *:after {
     box-sizing: inherit;
-    font-family: 'Rowdies', cursive;
-    font-family: 'Pacifico', cursive;
-    font-family: 'Press Start 2P', cursive;
-    font-family: 'Roboto Mono', monospace;
+    font-family: "Roboto", sans-serif;
 }
 
-/* Remove default margin and padding */
 body,
 h1,
 h2,
@@ -29,27 +21,28 @@ ul {
     padding: 0;
 }
 
-/* Set default font size and family */
 html,
 body {
     font-size: 16px;
-    font-family: sans-serif;
     height: 100%;
     width: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto Mono', monospace;
 }
 
-/* Remove list styles */
 ol,
 ul {
     list-style: none;
 }
 
-/* Remove underline from links */
 a {
     text-decoration: none;
 }
 
-/* Responsive images */
 img {
     max-width: 100%;
     height: auto;
@@ -60,12 +53,12 @@ img {
     body {
         --text-color: #6ca5da;
         --bkg-color: #000000;
-        --panel-color: #fff;
+        --panel-color: #cddade;
     }
 
     body.light-theme {
         --text-color: #003566;
-        --bkg-color: #fff;
+        --bkg-color: #cddade;
         --panel-color: #81bfd8;
     }
 }
@@ -96,7 +89,7 @@ p {
 }
 
 .nav-item {
-    margin: 0rem 0rem 0rem 2rem;
+    margin: 0rem 1rem 0rem 1rem;
 }
 
 
@@ -133,6 +126,11 @@ p {
 }
 
 /* lightmode toggle start */
+.lightDarkmode {
+    position: absolute;
+    right: 1rem;
+}
+
 .switch {
     font-size: 17px;
     position: relative;

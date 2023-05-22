@@ -27,3 +27,8 @@ togSwitch.addEventListener("click", function () {
 
     localStorage.setItem("theme", theme);
 });
+
+const ClickToViewAll2022 = document.querySelector(".ClickToViewAll2022");
+const hiddenText = document.querySelector("#hiddenText")
+
+ClickToViewAll2022.addEventListener("click", function () { hiddenText.classList.toggle("toggleText"); });

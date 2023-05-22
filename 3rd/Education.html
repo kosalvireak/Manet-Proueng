@@ -6,10 +6,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Education Page</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
         <title>Home Page</title>
+        <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
+
         <link rel="stylesheet" href="GlobalStyle.css">
         <link rel="stylesheet" href="Education.css">
+        <link rel="stylesheet" href="GanttChart.css">
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     </head>
 
@@ -39,26 +42,28 @@
                         </li>
                     </ul>
                 </div>
-                <label class="switch">
-                    <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <g fill="#ffd43b">
-                                <circle r="5" cy="12" cx="12"></circle>
+                <div class="lightDarkmode">
+                    <label class="switch">
+                        <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <g fill="#ffd43b">
+                                    <circle r="5" cy="12" cx="12"></circle>
+                                    <path
+                                        d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z">
+                                    </path>
+                                </g>
+                            </svg></span>
+                        <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                                 <path
-                                    d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z">
+                                    d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z">
                                 </path>
-                            </g>
-                        </svg></span>
-                    <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                            <path
-                                d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z">
-                            </path>
-                        </svg></span>
-                    <input type="checkbox" class="input">
-                    <span class="slider"></span>
-                </label>
+                            </svg></span>
+                        <input type="checkbox" class="input">
+                        <span class="slider"></span>
+                    </label>
+                </div>
             </div>
         </nav>
-        <div class="wrapper" id="Wrapper">
+        <div class="Wrapper" id="Wrapper">
             <div class="center-line">
                 <a href="#" class="scroll-icon"><i class="fas fa-caret-up"></i></a>
             </div>
@@ -75,7 +80,6 @@
                     </ul>
                     <div class="bottom">
                         <a href="#2019">Detail</a>
-                        <i>- Someone famous</i>
                     </div>
                 </section>
             </div>
@@ -92,7 +96,6 @@
                     </ul>
                     <div class="bottom">
                         <a href="#2020">Detail</a>
-                        <i>- Someone famous</i>
                     </div>
                 </section>
             </div>
@@ -111,7 +114,6 @@
                     </ul>
                     <div class="bottom">
                         <a href="#2021">Detail</a>
-                        <i>- Someone famous</i>
                     </div>
                 </section>
             </div>
@@ -132,7 +134,6 @@
                     </ul>
                     <div class="bottom">
                         <a href="#2022">Detail</a>
-                        <i>- Someone famous</i>
                     </div>
                 </section>
             </div>
@@ -147,13 +148,12 @@
                         <li>1 Internship</li>
                     </ul>
                     <div class="bottom">
-                        <a href="#2023">Detail</a>
-                        <i>- Someone famous</i>
+                        <a href="#2024">Detail</a>
                     </div>
                 </section>
             </div>
         </div>
-        <section id="2019" class=" d-flex align-items-center justify-content-center">
+        <section id="2019" class=" d-flex align-items-center justify-content-center detailyear">
             <div class="row">
                 <ul>
                     <li>25/Nov/2019: Participated in Engineering Without Border (EWB) Workshop.</li>
@@ -197,22 +197,138 @@
             </div>
         </section>
         <section id="2022" class=" d-flex align-items-center justify-content-center">
-            <div class="row">
-                <ul>
-                    <li>Teaching Coding, Computer, and Electronic components, to high school students.</li>
-                    <li>6 September 2022: Sharing tips for getting a Grade A in National Exam to grade 12 students.</li>
-                    <li>27/Aug/2022: Certificate of completed in NICC 3rd Startup Camp (ICT)</li>
-                    <li>Passed Techo Digital Talent Scholarship.</li>
-                    <li>Cumulative Grade Point Average of Year 1 at Royal University of Phnom Penh: 3.81</li>
-                    <li>Certificate for achieving the Top 1 in Higher Diploma in Software Development.</li>
-                    <li>Completed 3 months of backend, frontend development, and quality assurance internship.</li>
-                </ul>
-            </div>
+            <div class="wrapper">
+                <div class="header d-flex align-items-center justify-content-center text-center​">
+                    <button class="ClickToViewAll ClickToViewAll2022">2022</button>
+                </div>
+                <div class="gantt">
+                    <div class="gantt__row gantt__row--months">
+                        <div class="gantt__row-first ">
+                            <span></span>
+                        </div>
+                        <span>Jan</span><span>Feb</span><span>Mar</span>
+                        <span>Apr</span><span>May</span><span>Jun</span>
+                        <span>Jul</span><span>Aug</span><span>Sep</span>
+                        <span>Oct</span><span>Nov</span><span>Dec</span>
+                    </div>
+                    <div class="gantt__row gantt__row--lines" data-month="5">
+                        <span></span><span></span><span></span>
+                        <span></span><span></span><span></span>
+                        <span></span><span></span><span></span>
+                        <span></span><span></span><span></span>
+                    </div>
+                    <div class="gantt__row">
+                        <div class="gantt__row-first">
+                            E2STEM
+                        </div>
+                        <ul class="gantt__row-bars E2STEM_2022">
+                            <li style="grid-column: 1/9; ">Higher Diploma
+                                in Software
+                                Development : Top 1</li>
+                        </ul>
+                        <div class="Extra-Text">
+                            <p>
+                                Certificate for achieving the Top 1 in Higher Diploma in Software Development.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="gantt__row">
+                        <div class="gantt__row-first">
+                            RUPP
+                        </div>
+                        <ul class="gantt__row-bars RUPP_2022">
+                            <li style="grid-column: 2/11; background-color: #2ecaac;">Information Technology Engineering
+                                : GPA 3.81
+                            </li>
+                        </ul>
+                        <div class="Extra-Text">
+                            <p>
+                                Cumulative Grade Point Average of Year 1 at Royal University of Phnom Penh: 3.81
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gantt__row">
+                        <div class="gantt__row-first">
+                            Scholarship
+                        </div>
+                        <ul class="gantt__row-bars Scholarship_2022">
+                            <li style="grid-column: 2/3; background-color: #ff6252;" class="stripes">Pass
+                            </li>
+                        </ul>
+                        <div class="Extra-Text">
+                            <p>
+                                Passed Techo Digital Talent Scholarship.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gantt__row">
+                        <div class="gantt__row-first">
+                            Certificate
+                        </div>
+                        <ul class="gantt__row-bars Certificate_2022">
+                            <li style="grid-column: 8/9; background-color: #2ecaac;" class="stripes">NICC
+                            </li>
+                        </ul>
+                        <div class="Extra-Text">
+                            <p>
+                                Certificate of completed in NICC 3rd Startup Camp (ICT)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gantt__row">
+                        <div class="gantt__row-first">
+                            Coaching
+                        </div>
+                        <ul class="gantt__row-bars Coaching_2022">
+                            <li style="grid-column: 3/4; background-color: #54c6f9;">Teach</li>
+                            <li style="grid-column: 9/10; background-color: #54c6f9;">Share</li>
+
+                        </ul>
+
+                        <div class="Extra-Text">
+                            <p>Teaching Coding, Computer, and Electronic components, to high school students.</p>
+                            <p>
+                                Sharing tips for getting a Grade A in National Exam to grade 12 students.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="gantt__row">
+                        <div class="gantt__row-first">
+                            Internship
+                        </div>
+                        <ul class="gantt__row-bars Internship_2022">
+                            <li style="grid-column: 9/12; background-color: #ff6252;" class="stripes">Software Developer
+                            </li>
+                        </ul>
+                        <div class="Extra-Text">
+                            <p>
+                                Completed 3 months of backend, frontend development, and quality assurance internship at
+                                Khalibre.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4 hiddenText" id="hiddenText">
+                    <ul>
+                        <li>Teaching Coding, Computer, and Electronic components, to high school students.</li>
+                        <li>6 September 2022: Sharing tips for getting a Grade A in National Exam to grade 12 students.
+                        </li>
+                        <li>27/Aug/2022: Certificate of completed in NICC 3rd Startup Camp (ICT)</li>
+                        <li>Passed Techo Digital Talent Scholarship.</li>
+                        <li>Cumulative Grade Point Average of Year 1 at Royal University of Phnom Penh: 3.81</li>
+                        <li>Certificate for achieving the Top 1 in Higher Diploma in Software Development.</li>
+                        <li>Completed 3 months of backend, frontend development, and quality assurance internship at
+                            Khalibre.</li>
+                    </ul>
+                </div>
         </section>
         <section id="2023" class=" d-flex align-items-center justify-content-center">
             <div class="row">
                 <ul>
-                    <li>Completed 3 months of backend, frontend development, and quality assurance internship.</li>
+                    <li>Completed 3 months of backend, frontend development, and quality assurance internship at
+                        Khalibre.</li>
                 </ul>
             </div>
         </section>
