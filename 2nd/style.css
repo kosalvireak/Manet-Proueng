@@ -1,0 +1,182 @@
+body {
+    font-family: "Fredoka", sans-serif;
+    background-color: rgb(19, 19, 19);
+}
+
+.normal-bg {
+    background-color: rgb(236, 236, 233) !important;
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#Education {
+    height: max-content;
+}
+
+#About_Me {
+    top: 45% !important;
+}
+
+/* Lazy Load Styles */
+.card-image {
+    object-fit: contain;
+    display: block;
+    min-height: 20rem;
+    /* layout hack */
+    background: #fff center center no-repeat;
+    background-size: cover;
+    /* filter: blur(3px); */
+    /* blur the lowres image */
+}
+
+.card-image>img {
+    display: block;
+    width: 100%;
+    opacity: 1;
+    /* visually hide the img element */
+}
+
+.card-image.is-loaded {
+    filter: none;
+    /* remove the blur on fullres image */
+    transition: filter 1s;
+}
+
+
+
+
+/* Layout Styles */
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+}
+
+button.github {
+    --width: 150px;
+    --timing: 2s;
+    border: 0;
+    width: var(--width);
+    padding-block: 1em;
+    color: #fff !important;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background: rgb(255, 197, 83);
+    transition: all 0.2s;
+    border-radius: 10px;
+}
+
+button.github:hover {
+    background-image: linear-gradient(to right, rgb(250, 82, 82), rgb(250, 82, 82) 16.65%, rgb(190, 75, 219) 16.65%, rgb(190, 75, 219) 33.3%, rgb(76, 110, 245) 33.3%, rgb(76, 110, 245) 49.95%, rgb(64, 192, 87) 49.95%, rgb(64, 192, 87) 66.6%, rgb(250, 176, 5) 66.6%, rgb(250, 176, 5) 83.25%, rgb(253, 126, 20) 83.25%, rgb(253, 126, 20) 100%, rgb(250, 82, 82) 100%);
+    animation: var(--timing) linear dance6123 infinite;
+    transform: scale(1.1) translateY(-1px);
+}
+
+@keyframes dance6123 {
+    to {
+        background-position: var(--width);
+    }
+}
+
+.box {
+    box-shadow: 15px 15px 30px #bebebe,
+        -15px -15px 30px #ffffff;
+}
+
+.card-list {
+    display: block;
+    margin: 1rem auto;
+    padding: 0;
+    font-size: 0;
+    text-align: center;
+    list-style: none;
+}
+
+.card {
+    display: inline-block;
+    width: 85%;
+    max-width: 29rem;
+    margin: 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    overflow: hidden;
+    box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 0.5);
+    transition: transform 0.1s ease-in-out, box-shadow 0.1s;
+}
+
+.card1 {
+    display: inline-block;
+    align-items: center;
+    width: 85%;
+    max-width: 40rem;
+    height: 20rem;
+    margin: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    text-decoration: none;
+    overflow: hidden;
+    box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 0.5);
+    transition: transform 0.1s ease-in-out, box-shadow 0.1s;
+}
+
+.card:hover {
+    transform: translateY(-0.5rem) scale(1.0125);
+    box-shadow: 0 0.5em 3rem -1rem rgba(0, 0, 0, 0.5);
+}
+
+.card1:hover {
+    transform: translateY(-0.5rem) scale(1.0125);
+    box-shadow: 0 0.5em 3rem -1rem rgba(0, 0, 0, 0.5);
+}
+
+.card-description {
+    display: block;
+    padding: 1em 0.5em;
+    color: #515151;
+    text-decoration: none;
+}
+
+.card-description>h2 {
+    margin: 0 0 0.5em;
+}
+
+.card-description>p {
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+}
+
+.w-50 {
+    width: 100% !important;
+    height: 100%;
+}
+
+h5 {
+    line-height: 2;
+}
+
+@media (prefers-color-scheme: dark) {
+
+    /* defaults to dark theme */
+    body {
+        --text-color: #eee;
+        --bkg-color: #121212;
+    }
+
+    body.light-theme {
+        --text-color: #222;
+        --bkg-color: #fff;
+    }
+}

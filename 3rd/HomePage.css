@@ -1,0 +1,28 @@
+.github {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: var(--bkg-color);
+    height: 4rem;
+    width: 10rem;
+    margin: auto;
+    background-color: var(--text-color);
+    border-radius: 7px;
+    font-size: large;
+
+}
+
+.github:hover {
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 4px;
+    border-radius: 7px;
+    color: var(--bkg-color);
+
+
+    -webkit-box-shadow: 0px 0px 7px #6ca5da;
+    -moz-box-shadow: 0px 0px 7px #6ca5da;
+    box-shadow: 0px 0px 7px #6ca5da;
+}
