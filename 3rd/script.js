@@ -28,7 +28,19 @@ togSwitch.addEventListener("click", function () {
     localStorage.setItem("theme", theme);
 });
 
+const ClickToViewAll2019 = document.querySelector(".ClickToViewAll2019");
+const ClickToViewAll2020 = document.querySelector(".ClickToViewAll2020");
+const ClickToViewAll2021 = document.querySelector(".ClickToViewAll2021");
 const ClickToViewAll2022 = document.querySelector(".ClickToViewAll2022");
-const hiddenText = document.querySelector("#hiddenText")
+const ClickToViewAll2023 = document.querySelector(".ClickToViewAll2023");
+const hiddenText2019 = document.querySelector("#hiddenText2019")
+const hiddenText2020 = document.querySelector("#hiddenText2020")
+const hiddenText2021 = document.querySelector("#hiddenText2021")
+const hiddenText2022 = document.querySelector("#hiddenText2022")
+const hiddenText2023 = document.querySelector("#hiddenText2023")
 
-ClickToViewAll2022.addEventListener("click", function () { hiddenText.classList.toggle("toggleText"); });
+ClickToViewAll2019.addEventListener("click", function () { hiddenText2019.classList.toggle("toggleText"); });
+ClickToViewAll2020.addEventListener("click", function () { hiddenText2020.classList.toggle("toggleText"); });
+ClickToViewAll2021.addEventListener("click", function () { hiddenText2021.classList.toggle("toggleText"); });
+ClickToViewAll2022.addEventListener("click", function () { hiddenText2022.classList.toggle("toggleText"); });
+ClickToViewAll2023.addEventListener("click", function () { hiddenText2023.classList.toggle("toggleText"); });
