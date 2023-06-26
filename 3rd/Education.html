@@ -8,11 +8,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home Page</title>
         <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
-
         <link rel="stylesheet" href="GlobalStyle.css">
         <link rel="stylesheet" href="Education.css">
         <link rel="stylesheet" href="GanttChart.css">
-
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     </head>
 
@@ -65,11 +63,10 @@
         </nav>
         <div class="Wrapper" id="Wrapper">
             <div class="center-line">
-                <a href="#" class="scroll-icon"><i class="fas fa-caret-up"></i></a>
             </div>
             <div class="row row-1">
                 <section>
-                    <i class="icon fas fa-home"></i>
+                    <i class="icon">16</i>
                     <div class="details">
                         <span class="title">2019</span>
                         <span>High School Grade 10</span>
@@ -85,7 +82,7 @@
             </div>
             <div class="row row-2">
                 <section>
-                    <i class="icon fas fa-star"></i>
+                    <i class="icon">17</i>
                     <div class="details">
                         <span class="title">2020</span>
                         <span>High School Grade 11</span>
@@ -101,7 +98,7 @@
             </div>
             <div class="row row-1">
                 <section>
-                    <i class="icon fas fa-rocket"></i>
+                    <i class="icon">18</i>
                     <div class="details">
                         <span class="title">2021</span>
                         <span>High School Grade 12</span>
@@ -119,7 +116,7 @@
             </div>
             <div class="row row-2">
                 <section>
-                    <i class="icon fas fa-globe"></i>
+                    <i class="icon">19</i>
                     <div class="details">
                         <span class="title">2022</span>
                         <span>University Year 1</span>
@@ -139,7 +136,7 @@
             </div>
             <div class="row row-1">
                 <section>
-                    <i class="icon fas fa-paper-plane"></i>
+                    <i class="icon">20</i>
                     <div class="details">
                         <span class="title">2023</span>
                         <span>University Year 2</span>
@@ -153,23 +150,91 @@
                 </section>
             </div>
         </div>
-        <!-- start 2019 -->
-        <section id="2019" class=" d-flex align-items-center justify-content-center detailyear">
-            <div class="row">
-                <ul>
-                    <li>25/Nov/2019: Participated in Engineering Without Border (EWB) Workshop.</li>
-                    <li>29/Nov/2019: Participated as an exhibitor in Stem Festival.</li>
-                    <li>Certificate for Highest improvement in English (Elementary) in the Mid-Year Examination in March
-                        2019</li>
-                    <li>Certificate for achieving the Highest improvement in English (Elementary) in the Final
-                        Examination of 2018/2019</li>
-                    <li>Certificate for achieving the Top 1 in term 1 grade 11 BIOLOGY.</li>
-                    <li>Certificate for perfect attendance in the 2018/2019 academic year.</li>
 
-                </ul>
-            </div>
+        <!-- start 2019 -->
+        <section id="2019" class=" d-flex align-items-center justify-content-center">
+            <div class="wrapper">
+                <div class="header d-flex align-items-center justify-content-center text-center​">
+                    <button class="ClickToViewAll ClickToViewAll2019">2019</button>
+                </div>
+                <div class="gantt">
+                    <div class="gantt__row gantt__row--months">
+                        <div class="gantt__row-first ">
+                            <span></span>
+                        </div>
+                        <span>Jan</span><span>Feb</span><span>Mar</span>
+                        <span>Apr</span><span>May</span><span>Jun</span>
+                        <span>Jul</span><span>Aug</span><span>Sep</span>
+                        <span>Oct</span><span>Nov</span><span>Dec</span>
+                    </div>
+                    <div class="gantt__row gantt__row--lines" data-month="5">
+                        <span></span><span></span><span></span>
+                        <span></span><span></span><span></span>
+                        <span></span><span></span><span></span>
+                        <span></span><span></span><span></span>
+                    </div>
+                    <div class="gantt__row">
+                        <div class="gantt__row-first">
+                            High School
+                        </div>
+                        <ul class="gantt__row-bars E2STEM_2019">
+                            <li style="grid-column: 1/12; ">E2STEM Education Preah Yukunthor High School : Grade 10</li>
+                        </ul>
+                    </div>
+                    <div class="gantt__row">
+                        <div class="gantt__row-first">
+                            Participated
+                        </div>
+                        <ul class="gantt__row-bars Participated_2019">
+                            <li style="grid-column: 11/12; background-color: #ff6252;" class="stripes">STEM
+                            </li>
+                        </ul>
+                        <div class="Extra-Text">
+                            <p>
+                                Participated in Engineering Without Border (EWB) Workshop.
+                                Participated as an exhibitor in Stem Festival.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gantt__row">
+                        <div class="gantt__row-first">
+                            Certificate
+                        </div>
+                        <ul class="gantt__row-bars Certificate_2019">
+                            <li style="grid-column: 4/5; background-color: #2ecaac;" class="stripes">One
+                            </li>
+                            <li style="grid-column: 10/11; background-color: #2ecaac;" class="stripes">Three
+                            </li>
+                        </ul>
+                        <div class="Extra-Text">
+                            <p>
+                                Certificate for achieving
+                            <ul style="color: var(--text-color);">
+                                <li>Highest improvement in English Mid-Year</li>
+                                <li>Highest improvement in English Final</li>
+                                <li>Top 1 in Term 1 grade 11 BIOLOGY</li>
+                                <li>Perfect Attendance</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4 hiddenText" id="hiddenText2019">
+                    <ul>
+                        <li>25/Nov/2019: Participated in Engineering Without Border (EWB) Workshop.</li>
+                        <li>29/Nov/2019: Participated as an exhibitor in Stem Festival.</li>
+                        <li>Certificate for Highest improvement in English (Elementary) in the Mid-Year Examination in
+                            March
+                            2019</li>
+                        <li>Certificate for achieving the Highest improvement in English (Elementary) in the Final
+                            Examination of 2018/2019</li>
+                        <li>Certificate for achieving the Top 1 in term 1 grade 11 BIOLOGY.</li>
+                        <li>Certificate for perfect attendance in the 2018/2019 academic year.</li>
+                    </ul>
+                </div>
         </section>
         <!-- end 2019 -->
+
         <!-- start 2020 -->
         <section id="2020" class=" d-flex align-items-center justify-content-center">
             <div class="row">
@@ -181,11 +246,11 @@
                     <li>Certificate for achieving the Top 1 in term 2 grade 11 BIOLOGY.</li>
                     <li>Certificate for achieving the Top 1 in term 2 grade 11 CHEMISTRY.</li>
                     <li>Certificate for achieving the Top 3 in term 2 grade 11.</li>
-
                 </ul>
             </div>
         </section>
         <!-- end 2020s -->
+
         <!-- start 2021 -->
         <section id="2021" class=" d-flex align-items-center justify-content-center">
             <div class="wrapper">

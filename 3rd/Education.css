@@ -20,7 +20,7 @@ body {
 
 .Wrapper .center-line {
     position: absolute;
-    height: 100%;
+    height: 85%;
     width: 4px;
     background: var(--text-color);
     left: 50%;

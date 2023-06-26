@@ -204,6 +204,38 @@ body {
     display: none;
 }
 
+/* start 2019 */
+.E2STEM_2019:hover+.Extra-Text {
+    display: block;
+}
+
+
+.RUPP_2019:hover+.Extra-Text {
+    display: block;
+}
+
+.Participated_2019:hover+.Extra-Text {
+    display: block;
+}
+
+.Certificate_2019:hover+.Extra-Text {
+    display: block;
+}
+
+.Coaching_2019:hover+.Extra-Text {
+    display: block;
+}
+
+.Achievement_2019:hover+.Extra-Text {
+    display: block;
+}
+
+.Project_2019:hover+.Extra-Text {
+    display: block;
+}
+
+/* end 2019 */
+
 /* start 2021 */
 .E2STEM_2021:hover+.Extra-Text {
     display: block;
