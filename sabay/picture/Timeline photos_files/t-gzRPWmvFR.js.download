@@ -1,0 +1,3 @@
+;/*FB_PKG_DELIM*/
+
+__d("MUFITypingIndicatorPill.react",["cx","MUFICommentListAbstractPill.react","MUFITypingAnimation.react","prop-types","react"],(function(a,b,c,d,e,f,g,h){"use strict";var i=d("react");a=function(a){babelHelpers.inheritsLoose(b,a);function b(){return a.apply(this,arguments)||this}var d=b.prototype;d.render=function(){return i.jsx(c("MUFICommentListAbstractPill.react"),{className:"_5bvi",onClick:this.props.onClick,children:i.jsx(c("MUFITypingAnimation.react"),{className:"_5bxh",dotClass:"_5bxi"})})};return b}(i.Component);a.propTypes={onClick:c("prop-types").func};g["default"]=a}),98);

@@ -1,0 +1,3 @@
+;/*FB_PKG_DELIM*/
+
+__d("MUFICommentTypingIndicator.react",["cx","fbt","MUFITypingAnimation.react","joinClasses","react"],(function(a,b,c,d,e,f,g,h,i){"use strict";var j=d("react");function a(a){a=a.className;return j.jsxs("div",{className:c("joinClasses")(a,"_2jc"),children:[j.jsx(c("MUFITypingAnimation.react"),{className:"_2je"}),j.jsx("span",{className:"_2jf",children:j.jsx("div",{className:"_2jg",children:i._("Someone is typing a comment\u2026")})})]})}a.displayName=a.name+" [from "+f.id+"]";g["default"]=a}),98);
